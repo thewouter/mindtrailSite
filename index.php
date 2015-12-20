@@ -93,8 +93,12 @@
 					console.log("creating new group", true);
 				  	var letters = '0123456789abcdef'.split('');
 					var pinColor = "";
+					var nameHash = 0;
+					for (var i = 0; i < groupName.length; i++){
+						nameHash+=groupName.charCodeAt(i);
+					}
 					for (var i = 0; i < 6; i++ ) {
-						pinColor += letters[Math.round(((Math.PI*(groupName.charCodeAt(i % groupName.length)))*Math.pow(10,i) % 10)/10) * 15];
+						pinColor += letters[Math.round(((Math.PI*nameHash*(groupName.charCodeAt(i % groupName.length)))*Math.pow(10,i) % 10)/10) * 15];
 						console.log(pinColor);
 					}
 					var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor + "|000000",
