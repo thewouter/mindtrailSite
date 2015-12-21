@@ -28,6 +28,8 @@
 	        	$route = fopen("crossings.dat", "r") or die("Unable to open file!");
 	        	$raw_data = fread($route,filesize("crossings.dat"));
 	        	$data = explode(" ", $raw_data);
+	        	$first = "";
+	        	$firstCrossing = true;
 	        	for($i = 0; $i < sizeof($data) - 2;){
 	        		if(substr($data[$i], 0,1)=="1"){
 		        		$lat = strval(intval(substr($data[$i],1))/1000000);
@@ -35,6 +37,10 @@
 		        		$lon = strval(intval($data[$i])/1000000);
 		        		$i+=3;
 		        		echo "new google.maps.LatLng(" . $lat . ", " . $lon . "), \n";
+		        		if ($firstCrossing) {
+		        			$first = "new google.maps.LatLng(" . $lat . ", " . $lon . "), \n";
+		        			$firstCrossing = false;
+		        		}
 	        		} else {
 	        			$i+=4;
 	        		}
@@ -49,6 +55,7 @@
 	        		$i+=4;
 	        	}
 	        	fclose($route);
+	        	echo $first;
 	        	?>
 	    ];
 
