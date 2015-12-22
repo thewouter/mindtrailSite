@@ -23,51 +23,86 @@
 
         map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
-	var route =[ 
-	        	<?php 
-	        	$route = fopen("crossings.dat", "r") or die("Unable to open file!");
-	        	$raw_data = fread($route,filesize("crossings.dat"));
-	        	$data = explode(" ", $raw_data);
-	        	$first = "";
-	        	$firstCrossing = true;
-	        	for($i = 0; $i < sizeof($data) - 2;){
-	        		if(substr($data[$i], 0,1)=="1"){
-		        		$lat = strval(intval(substr($data[$i],1))/1000000);
-		        		$i++;
-		        		$lon = strval(intval($data[$i])/1000000);
-		        		$i+=3;
-		        		echo "new google.maps.LatLng(" . $lat . ", " . $lon . "), \n";
-		        		if ($firstCrossing) {
-		        			$first = "new google.maps.LatLng(" . $lat . ", " . $lon . "), \n";
-		        			$firstCrossing = false;
-		        		}
-	        		} else {
-	        			$i+=4;
-	        		}
-	        	}
-	        	if(substr($data[$i], 0,1)=="1"){
-	        		$lat = strval(intval(substr($data[$i],1))/1000000);
-	        		$i++;
-	        		$lon = strval(intval($data[$i])/1000000);
-	        		$i+=3;
-	        		echo "new google.maps.LatLng(" . $lat . ", " . $lon . ") \n";
-	        	} else {
-	        		$i+=4;
-	        	}
-	        	fclose($route);
-	        	echo $first;
-	        	?>
-	    ];
 
-	var path = new google.maps.Polyline({
-		path: route,
-		geodesic: true,
-		strokeColor: '#FF0000',
-		strokeOpacity: 0.5,
-		strokeWeight:2
-	});
-	path.setMap(map);
-      }
+        $.ajax({
+        	  type: "GET",
+        	  url: "/route.gpx",
+        	  dataType: "xml",
+        	  success: function(xml) {
+        		var points = [];
+        		var bounds = new google.maps.LatLngBounds ();
+        		$(xml).find("rtept").each(function() {
+        		  var lat = $(this).attr("lat");
+        		  var lon = $(this).attr("lon");
+        		  var p = new google.maps.LatLng(lat, lon);
+        		  points.push(p);
+        		  bounds.extend(p);
+        		  console.log("tests");
+        		});
+
+        		var poly = new google.maps.Polyline({
+        			path: points,
+        			geodesic: true,
+        			strokeColor: '#FF0000',
+        			strokeOpacity: 0.5,
+        			strokeWeight:2
+        		});
+        		
+        		poly.setMap(map);
+        		// fit bounds to track
+        		map.fitBounds(bounds);
+        	  }
+        	});
+
+        
+//	var route =[ 
+//	        	<?php 
+//	        	$route = fopen("crossings.dat", "r") or die("Unable to open file!");
+//	        	$raw_data = fread($route,filesize("crossings.dat"));
+//	        	$data = explode(" ", $raw_data);
+//	        	$first = "";
+//	        	$firstCrossing = true;
+//	        	for($i = 0; $i < sizeof($data) - 2;){
+//	        		if(substr($data[$i], 0,1)=="1"){
+//		        		$lat = strval(intval(substr($data[$i],1))/1000000);
+//		        		$i++;
+//		        		$lon = strval(intval($data[$i])/1000000);
+//		        		$i+=3;
+//		        		echo "new google.maps.LatLng(" . $lat . ", " . $lon . "), \n";
+//		        		if ($firstCrossing) {
+//		        			$first = "new google.maps.LatLng(" . $lat . ", " . $lon . "), \n";
+//		        			$firstCrossing = false;
+//		        		}
+//	        		} else {
+//	        			$i+=4;
+//	        		}
+//	        	}
+//	        	if(substr($data[$i], 0,1)=="1"){
+//	        		$lat = strval(intval(substr($data[$i],1))/1000000);
+//	        		$i++;
+//	        		$lon = strval(intval($data[$i])/1000000);
+//	        		$i+=3;
+//	        		echo "new google.maps.LatLng(" . $lat . ", " . $lon . ") \n";
+//	        	} else {
+//	        		$i+=4;
+//	        	}
+//	        	fclose($route);
+//	        	echo $first;
+//	        	?>
+//	    ];
+
+
+		
+	
+//	var path = new google.maps.Polyline({
+//		path: route,
+//		geodesic: true,
+//		strokeColor: '#FF0000',
+//		strokeOpacity: 0.5,
+//		strokeWeight:2
+//	});
+//	path.setMap(map);
+     }
 	  
       google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -95,7 +130,7 @@
 				  
 				  var lon = parseInt(data[data.length - 1])/1000000;
 				  var lat = parseInt(data[data.length - 2])/1000000;
-				  console.log(ii + " " + groupName + " " + lon + " " + lat);
+				  //console.log(ii + " " + groupName + " " + lon + " " + lat);
 				  if(markers[groupName] == null){ //new unregistered group
 					console.log("creating new group", true);
 				  	var letters = '0123456789abcdef'.split('');
@@ -106,7 +141,7 @@
 					}
 					for (var i = 0; i < 6; i++ ) {
 						pinColor += letters[Math.round(((Math.PI*nameHash*(groupName.charCodeAt(i % groupName.length)))*Math.pow(10,i) % 10)/10) * 15];
-						console.log(pinColor);
+						//console.log(pinColor);
 					}
 					var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor + "|000000",
 						new google.maps.Size(21, 34),
@@ -135,9 +170,9 @@
 		                		"<\/form>"+
 		                		"<\/div>";
 					  makeInfoWindowEvent(map, infoWindow, content, markers[groupName]);
-					  console.log("done", true);
+					  //console.log("done", true);
 				  }else{
-					  console.log("resetting coordinates", true);
+					  //console.log("resetting coordinates", true);
 				  	  markers[groupName].setPosition(new google.maps.LatLng(lat, lon));
 				  }
 			}
