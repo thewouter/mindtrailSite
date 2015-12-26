@@ -17,6 +17,7 @@
     <script src="jquery-1.11.3.js" type="text/javascript"></script>
     <script type="text/javascript">
 	var map;
+	var removed = [];
 	var markers = new Array();
       function initialize() {
         var mapOptions = {
@@ -77,6 +78,14 @@
 			  var groups = coords.split("\n");
 			  for(var ii = 0; ii < groups.length-1; ii++){
 				  var data = groups[ii].split(" ");
+				  if(data[1] === "remove" && $.inArray(data[0], removed) == -1){
+					  console.log("removing " + data[0])
+					  delete markers[data[0]];
+					  removed.push(data[0]);
+					  continue;
+				  } else if ($.inArray(data[0], removed) > -1) {
+					  continue;
+				  }
 				  var groupName = data[0];
 				  for (var i = 1; i < data.length - 2; i++){
 				  		groupName = groupName + " " + data[i];
