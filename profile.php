@@ -41,7 +41,6 @@
         		  var p = new google.maps.LatLng(lat, lon);
         		  points.push(p);
         		  bounds.extend(p);
-        		  console.log("tests");
         		});
 
         		var poly = new google.maps.Polyline({
@@ -116,13 +115,11 @@
 					  };
 					  markers[groupName] = new google.maps.Marker(markerOptions);
 					  var content = 
-					   	"<div> "+
-		                		"<form action=\"sendMessage.php\" method=\"POST\" name='button' id=\"testdd\">"+
-		                		"<div>"+
-								groupName<?php if($user_check == "tochtstaf"){?> +
-		                		"<br><input type=\"hidden\" value=\"" + groupName + "\" name=\"group\"></input><input type=\"text\" size\"25\" id=\"message\" name=\"message\"></input><input type='submit' value='send Message' >"+
-		                		"<\/div>"+
-		                		"<\/form>"<?php }?>+
+					   			"<div> "+
+								groupName + "<br>" <?php if($user_check == "tochtstaf"){?> +
+								"<input width=\"25\" id=\"message\" required=\"required\"><\/input>"+
+								"<button onclick=\"sendMessage('" + groupName + "')\" > send <\/button><br>"+
+		                		"<button onclick=\"removeGroup('" + groupName + "')\" > remove <\/button>"<?php }?>+
 		                		"<\/div>";
 		  					  
 					  makeInfoWindowEvent(map, infoWindow, content, markers[groupName]);
@@ -140,9 +137,20 @@
 				infoWindow.open(map, marker);
 			});
 		}
+
+		function sendMessage(groupName){
+			$.post("sendMessage.php", {group: groupName, message: document.getElementById("message").value}, function(data, status){
+		        alert("sending message: " + status);
+		    });
+		}
 		
-		 </script>
-    
+		function removeGroup(groupName){
+			$.post("sendMessage.php", {group: groupName, message: "remove"}, function(data, status){
+		        alert("Removing group: " + status);
+		    });
+		}
+			
+    </script>
     
   </head>
   <body>
