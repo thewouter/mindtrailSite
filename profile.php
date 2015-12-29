@@ -19,6 +19,7 @@
 	var map;
 	var removed = [];
 	var markers = new Array();
+	var infoWindows = new Array();
       function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng(52.5763881, 6.4748419),
@@ -73,6 +74,18 @@
 		  xhttp.send();
     	}, 1000);
   	
+      String.prototype.replaceAll = function(search, replace) {
+          //if replace is not sent, return original string otherwise it will
+          //replace search string with 'undefined'.
+          if (replace === undefined) {
+              return this.toString();
+          }
+
+          return this.replace(new RegExp('[' + search + ']', 'g'), replace);
+      };
+
+
+  	
 		function setCoordinates(coords) {
 			  var infoWindow = new google.maps.InfoWindow();
 			  var groups = coords.split("\n");
@@ -87,15 +100,18 @@
 					  continue;
 				  }
 				  var groupName = data[0];
-				  for (var i = 1; i < data.length - 2; i++){
+				  for (var i = 1; i < data.length - 3; i++){
 				  		groupName = groupName + " " + data[i];
 				  }
+				  groupName.replaceAll("$"," ");
+				  //console.log(groupName);
+				  var time = data[data.length - 1];
 				  
-				  var lon = parseInt(data[data.length - 1])/1000000;
-				  var lat = parseInt(data[data.length - 2])/1000000;
+				  var lon = parseInt(data[data.length - 2])/1000000;
+				  var lat = parseInt(data[data.length - 3])/1000000;
 				  //console.log(ii + " " + groupName + " " + lon + " " + lat);
 				  if(markers[groupName] == null){ //new unregistered group
-					console.log("creating new group", true);
+					console.log("creating new group at " + lat + " " + lon, true);
 				  	var letters = '0123456789abcdef'.split('');
 					var pinColor = "";
 					var nameHash = 0;
@@ -123,22 +139,35 @@
 						shadow: pinShadow
 					  };
 					  markers[groupName] = new google.maps.Marker(markerOptions);
-					  var content = 
-					   			"<div> "+
-								groupName + "<br>" <?php if($user_check == "tochtstaf"){?> +
-								"<input width=\"25\" id=\"message\" required=\"required\"><\/input>"+
-								"<button onclick=\"sendMessage('" + groupName + "')\" > send <\/button><br>"+
-		                		"<button onclick=\"removeGroup('" + groupName + "')\" > remove <\/button>"<?php }?>+
-		                		"<\/div>";
-		  					  
-					  makeInfoWindowEvent(map, infoWindow, content, markers[groupName]);
-					  //console.log("done", true);
+					  var content = getContent(groupName, time);
+		  			  infoWindows[groupName] = new google.maps.InfoWindow({
+							content:content
+			  			  });
+					  markers[groupName].addListener('click', function(){
+						  infoWindows[groupName].open(map, markers[groupName]);
+					  });
+					  console.log("done", true);
 				  }else{
 					  //console.log("resetting coordinates", true);
 				  	  markers[groupName].setPosition(new google.maps.LatLng(lat, lon));
-				  }
+				  	var content = getContent(groupName, time);
+	  			    infoWindows[groupName] = new google.maps.InfoWindow({
+						content:content
+		  			});
+				}
 			}
 		};
+
+		function getContent(groupName, time){
+			 var content = 
+		   			"<div> "+
+					groupName<?php if($user_check == "tochtstaf"){?> + "<br>Laatst update: " + Math.floor(time / 60) + "m " + time%60 + "s geleden.<br>"  +
+					"<input width=\"25\" id=\"message\" required=\"required\"><\/input>"+
+					"<button onclick=\"sendMessage('" + groupName + "')\" > send <\/button><br>"+
+         			"<button onclick=\"removeGroup('" + groupName + "')\" > remove <\/button>"<?php }?>+
+         			"<\/div>";
+			return content;
+         }
 		
 		function makeInfoWindowEvent(map, infoWindow, content, marker){
 			google.maps.event.addListener(marker, 'click', function(){
