@@ -72,15 +72,12 @@
 		  };
 		  xhttp.open("POST", "groepjes.txt", true);
 		  xhttp.send();
-    	}, 1000);
+    	}, 5000);
   	
       String.prototype.replaceAll = function(search, replace) {
-          //if replace is not sent, return original string otherwise it will
-          //replace search string with 'undefined'.
           if (replace === undefined) {
               return this.toString();
           }
-
           return this.replace(new RegExp('[' + search + ']', 'g'), replace);
       };
 
@@ -91,69 +88,68 @@
 			  var groups = coords.split("\n");
 			  for(var ii = 0; ii < groups.length-1; ii++){
 				  var data = groups[ii].split(" ");
-				  if(data[1] === "remove" && $.inArray(data[0], removed) == -1){
-					  console.log("removing " + data[0])
-					  delete markers[data[0]];
+				  console.log(data);
+				  if(data[1] === "removed" && $.inArray(data[0], removed) < 0){
+					  console.log("removing " + data[0]);
 					  removed.push(data[0]);
-					  continue;
+					  delete markers[data[0]];
 				  } else if ($.inArray(data[0], removed) > -1) {
-					  continue;
-				  }
-				  var groupName = data[0];
-				  for (var i = 1; i < data.length - 3; i++){
-				  		groupName = groupName + " " + data[i];
-				  }
-				  groupName.replaceAll("$"," ");
-				  //console.log(groupName);
-				  var time = data[data.length - 1];
-				  
-				  var lon = parseInt(data[data.length - 2])/1000000;
-				  var lat = parseInt(data[data.length - 3])/1000000;
-				  //console.log(ii + " " + groupName + " " + lon + " " + lat);
-				  if(markers[groupName] == null){ //new unregistered group
-					console.log("creating new group at " + lat + " " + lon, true);
-				  	var letters = '0123456789abcdef'.split('');
-					var pinColor = "";
-					var nameHash = 0;
-					for (var i = 0; i < groupName.length; i++){
-						nameHash+=groupName.charCodeAt(i);
-					}
-					for (var i = 0; i < 6; i++ ) {
-						pinColor += letters[Math.round(((Math.PI*nameHash*(groupName.charCodeAt(i % groupName.length)))*Math.pow(10,i) % 10)/10) * 15];
-						//console.log(pinColor);
-					}
-					var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor + "|000000",
-						new google.maps.Size(21, 34),
-						new google.maps.Point(0,0),
-						new google.maps.Point(10, 34));
-					var pinShadow = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_shadow",
-						new google.maps.Size(40, 37),
-						new google.maps.Point(0, 0),
-						new google.maps.Point(12, 35));
-					  var markerOptions = {
-						position: new google.maps.LatLng(lat, lon),
-						map: map,
-						title: groupName,
-						animation: google.maps.Animation.DROP,
-						icon: pinImage,
-						shadow: pinShadow
-					  };
-					  markers[groupName] = new google.maps.Marker(markerOptions);
-					  var content = getContent(groupName, time);
-		  			  infoWindows[groupName] = new google.maps.InfoWindow({
+				  } else {
+					  var groupName = data[0];
+					  for (var i = 1; i < data.length - 3; i++){
+					  		groupName = groupName + " " + data[i];
+					  }
+					  console.log(groupName);
+					  var time = data[data.length - 1];
+					  
+					  var lon = parseInt(data[data.length - 2])/1000000;
+					  var lat = parseInt(data[data.length - 3])/1000000;
+					  //console.log(ii + " " + groupName + " " + lon + " " + lat);
+					  if(markers[groupName] == null){ //new unregistered group
+						console.log("creating new group at " + lat + " " + lon, true);
+					  	var letters = '0123456789abcdef'.split('');
+						var pinColor = "";
+						var nameHash = 0;
+						for (var i = 0; i < groupName.length; i++){
+							nameHash+=groupName.charCodeAt(i);
+						}
+						for (var i = 0; i < 6; i++ ) {
+							pinColor += letters[Math.round(((Math.PI*nameHash*(groupName.charCodeAt(i % groupName.length)))*Math.pow(10,i) % 10)/10) * 15];
+							//console.log(pinColor);
+						}
+						var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor + "|000000",
+							new google.maps.Size(21, 34),
+							new google.maps.Point(0,0),
+							new google.maps.Point(10, 34));
+						var pinShadow = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_shadow",
+							new google.maps.Size(40, 37),
+							new google.maps.Point(0, 0),
+							new google.maps.Point(12, 35));
+						  var markerOptions = {
+							position: new google.maps.LatLng(lat, lon),
+							map: map,
+							title: groupName,
+							animation: google.maps.Animation.DROP,
+							icon: pinImage,
+							shadow: pinShadow
+						  };
+						  markers[groupName] = new google.maps.Marker(markerOptions);
+						  var content = getContent(groupName, time);
+			  			  infoWindows[groupName] = new google.maps.InfoWindow({
+								content:content
+				  			  });
+						  markers[groupName].addListener('click', function(){
+							  infoWindows[groupName].open(map, markers[groupName]);
+						  });
+						  console.log("done", true);
+					  }else{
+						  //console.log("resetting coordinates", true);
+					  	  markers[groupName].setPosition(new google.maps.LatLng(lat, lon));
+					  	var content = getContent(groupName, time);
+		  			    infoWindows[groupName] = new google.maps.InfoWindow({
 							content:content
-			  			  });
-					  markers[groupName].addListener('click', function(){
-						  infoWindows[groupName].open(map, markers[groupName]);
-					  });
-					  console.log("done", true);
-				  }else{
-					  //console.log("resetting coordinates", true);
-				  	  markers[groupName].setPosition(new google.maps.LatLng(lat, lon));
-				  	var content = getContent(groupName, time);
-	  			    infoWindows[groupName] = new google.maps.InfoWindow({
-						content:content
-		  			});
+			  			});
+					}
 				}
 			}
 		};
