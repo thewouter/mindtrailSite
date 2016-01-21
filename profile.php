@@ -88,7 +88,6 @@
 			  var groups = coords.split("\n");
 			  for(var ii = 0; ii < groups.length-1; ii++){
 				  var data = groups[ii].split(" ");
-				  console.log(data);
 				  if(data[1] === "removed" && $.inArray(data[0], removed) < 0){
 					  console.log("removing " + data[0]);
 					  removed.push(data[0]);
@@ -99,7 +98,6 @@
 					  for (var i = 1; i < data.length - 3; i++){
 					  		groupName = groupName + " " + data[i];
 					  }
-					  console.log(groupName);
 					  var time = data[data.length - 1];
 					  
 					  var lon = parseInt(data[data.length - 2])/1000000;
@@ -160,7 +158,7 @@
 					groupName<?php if($user_check == "tochtstaf"){?> + "<br>Laatst update: " + Math.floor(time / 60) + "m " + time%60 + "s geleden.<br>"  +
 					"<input width=\"25\" id=\"message\" required=\"required\"><\/input>"+
 					"<button onclick=\"sendMessage('" + groupName + "')\" > send <\/button><br>"+
-         			"<button onclick=\"removeGroup('" + groupName + "')\" > remove <\/button>"<?php }?>+
+         			//"<button onclick=\"removeGroup('" + groupName + "')\" > remove <\/button>"<?php }?>+
          			"<\/div>";
 			return content;
          }
