@@ -92,8 +92,10 @@
 				  if(data[1] === "removed" && $.inArray(data[0], removed) < 0){
 					  console.log("removing " + data[0]);
 					  removed.push(data[0]);
+					  markers[data[0]].setMap(null);
 					  delete markers[data[0]];
 				  } else if ($.inArray(data[0], removed) > -1) {
+					  console.log("Already removed " + data[0]);
 				  } else {
 					  var groupName = data[0];
 					  for (var i = 1; i < data.length - 3; i++){
@@ -104,6 +106,7 @@
 					  var lon = parseInt(data[data.length - 2])/1000000;
 					  var lat = parseInt(data[data.length - 3])/1000000;
 					  //console.log(ii + " " + groupName + " " + lon + " " + lat);
+					  
 					  if(markers[groupName] == null){ //new unregistered group
 						console.log("creating new group at " + lat + " " + lon, true);
 					  	var letters = '0123456789abcdef'.split('');
