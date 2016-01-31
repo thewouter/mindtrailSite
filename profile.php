@@ -20,6 +20,7 @@
 	var removed = [];
 	var markers = new Array();
 	var infoWindows = new Array();
+	var infowindow = new google.maps.InfoWindow();
       function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng(52.5763881, 6.4748419),
@@ -31,39 +32,39 @@
 
 
         $.ajax({
-        	  type: "GET",
-        	  url: "/route.gpx",
-        	  dataType: "xml",
-        	  success: function(xml) {
-        		var points = [];
-        		var bounds = new google.maps.LatLngBounds ();
-        		$(xml).find("rtept").each(function() {
-        		  var lat = $(this).attr("lat");
-        		  var lon = $(this).attr("lon");
-        		  var p = new google.maps.LatLng(lat, lon);
-        		  points.push(p);
-        		  bounds.extend(p);
-        		});
+      	  type: "GET",
+      	  url: "/route.gpx",
+      	  dataType: "xml",
+      	  success: function(xml) {
+      		var points = [];
+      		var bounds = new google.maps.LatLngBounds ();
+      		$(xml).find("rtept").each(function() {
+      		  var lat = $(this).attr("lat");
+      		  var lon = $(this).attr("lon");
+      		  var p = new google.maps.LatLng(lat, lon);
+      		  points.push(p);
+      		  bounds.extend(p);
+      		});
 
-        		var poly = new google.maps.Polyline({
-        			path: points,
-        			geodesic: true,
-        			strokeColor: '#FF0000',
-        			strokeOpacity: 0.5,
-        			strokeWeight:2
-        		});
-        		
-        		poly.setMap(map);
-        		// fit bounds to track
-        		map.fitBounds(bounds);
-        	  }
-        	});
-     }
+      		var poly = new google.maps.Polyline({
+      			path: points,
+      			geodesic: true,
+      			strokeColor: '#FF0000',
+      			strokeOpacity: 0.5,
+      			strokeWeight:2
+      		});
+      		
+      		poly.setMap(map);
+      		// fit bounds to track
+      		map.fitBounds(bounds);
+      	  }
+      	});
+   }
 	  
-      google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, 'load', initialize);
 
 
-      setInterval(function() {
+    setInterval(function() {
 		  var xhttp = new XMLHttpRequest();
 		  xhttp.onreadystatechange = function() {
 		    if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -72,17 +73,17 @@
 		  };
 		  xhttp.open("POST", "groepjes.txt", true);
 		  xhttp.send();
-    	}, 5000);
-  	
-      String.prototype.replaceAll = function(search, replace) {
-          if (replace === undefined) {
-              return this.toString();
-          }
-          return this.replace(new RegExp('[' + search + ']', 'g'), replace);
-      };
+  	}, 5000);
+	
+    String.prototype.replaceAll = function(search, replace) {
+        if (replace === undefined) {
+            return this.toString();
+        }
+        return this.replace(new RegExp('[' + search + ']', 'g'), replace);
+    };
 
 
-  	
+	
 		function setCoordinates(coords) {
 			  var infoWindow = new google.maps.InfoWindow();
 			  var groups = coords.split("\n");
@@ -133,20 +134,23 @@
 						  };
 						  markers[groupName] = new google.maps.Marker(markerOptions);
 						  var content = getContent(groupName, time);
-			  			  infoWindows[groupName] = new google.maps.InfoWindow({
-								content:content
-				  			  });
-						  markers[groupName].addListener('click', function(){
-							  infoWindows[groupName].open(map, markers[groupName]);
-						  });
+			  			  //infoWindows[groupName] = new google.maps.InfoWindow({
+							//	content:content
+				  			//  });
+			  			google.maps.event.addListener(markers[groupName], 'click', (function(mm, tt) {
+			  			    return function() {
+			  			        infowindow.setContent(tt);
+			  			        infowindow.open(map, mm);
+			  			    }
+			  			})(markers[groupName], content));
 						  console.log("done", true);
 					  }else{
-						  //console.log("resetting coordinates", true);
-					  	  markers[groupName].setPosition(new google.maps.LatLng(lat, lon));
-					  	var content = getContent(groupName, time);
-		  			    infoWindows[groupName] = new google.maps.InfoWindow({
-							content:content
-			  			});
+							//console.log("resetting coordinates", true);
+						    markers[groupName].setPosition(new google.maps.LatLng(lat, lon));
+						  	var content = getContent(groupName, time);
+						  	infoWindows[groupName] = new google.maps.InfoWindow({
+								content:content
+				  			  });
 					}
 				}
 			}
@@ -158,7 +162,7 @@
 					groupName<?php if($user_check == "tochtstaf"){?> + "<br>Laatst update: " + Math.floor(time / 60) + "m " + time%60 + "s geleden.<br>"  +
 					"<input width=\"25\" id=\"message\" required=\"required\"><\/input>"+
 					"<button onclick=\"sendMessage('" + groupName + "')\" > send <\/button><br>"+
-         			//"<button onclick=\"removeGroup('" + groupName + "')\" > remove <\/button>"<?php }?>+
+         			"<button onclick=\"removeGroup('" + groupName + "')\" > remove <\/button>"<?php }?>+
          			"<\/div>";
 			return content;
          }
