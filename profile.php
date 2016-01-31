@@ -94,7 +94,7 @@
 					  removed.push(data[0]);
 					  markers[data[0]].setMap(null);
 					  delete markers[data[0]];
-				  } else if ($.inArray(data[0], removed) > -1) {
+				  } else if ($.inArray(data[0], removed) > -1 && data[1] === "removed") {
 					  console.log("Already removed " + data[0]);
 				  } else {
 					  var groupName = data[0];
