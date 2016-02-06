@@ -116,8 +116,7 @@
 							nameHash+=groupName.charCodeAt(i);
 						}
 						for (var i = 0; i < 6; i++ ) {
-							pinColor += letters[Math.round(((Math.PI*nameHash*(groupName.charCodeAt(i % groupName.length)))*Math.pow(10,i) % 10)/10) * 15];
-							//console.log(pinColor);
+							pinColor += letters[Math.round(((Math.PI*nameHash*(groupName.charCodeAt(i % groupName.length)))*Math.pow(10,i) % 10)/10 * 15)];
 						}
 						var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor + "|000000",
 							new google.maps.Size(21, 34),
