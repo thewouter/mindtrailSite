@@ -85,6 +85,7 @@
 
 	
 		function setCoordinates(coords) {
+			google.maps.event.clearListeners(map, 'click');
 			  var infoWindow = new google.maps.InfoWindow();
 			  var groups = coords.split("\n");
 			  for(var ii = 0; ii < groups.length-1; ii++){
@@ -151,9 +152,12 @@
 							//console.log("resetting coordinates", true);
 						    markers[groupName].setPosition(new google.maps.LatLng(lat, lon));
 						  	var content = getContent(groupName, time);
-						  	infoWindows[groupName] = new google.maps.InfoWindow({
-								content:content
-				  			  });
+						  	google.maps.event.addListener(markers[groupName], 'click', (function(mm, tt) {
+				  			    return function() {
+				  			        infowindow.setContent(tt);
+				  			        infowindow.open(map, mm);
+				  			    }
+				  			})(markers[groupName], content));
 					}
 				}
 			}
