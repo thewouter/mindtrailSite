@@ -38,7 +38,7 @@
       	  success: function(xml) {
       		var points = [];
       		var bounds = new google.maps.LatLngBounds ();
-      		$(xml).find("rtept").each(function() {
+      		$(xml).find("wpt").each(function() {
       		  var lat = $(this).attr("lat");
       		  var lon = $(this).attr("lon");
       		  var p = new google.maps.LatLng(lat, lon);
