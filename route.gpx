@@ -1,1 +1,630 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtrx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="Dakota 20" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd"><metadata><link href="http://www.garmin.com"><text>Garmin International</text></link><time>2016-02-14T10:07:40Z</time></metadata><wpt lat="52.488293" lon="6.461520"><ele>217.058624</ele><time>2016-02-14T10:07:40Z</time><name>001</name><sym>Residence</sym></wpt><wpt lat="52.489598" lon="6.460652"><ele>-26.404449</ele><time>2016-02-14T10:09:28Z</time><name>002</name><sym>Residence</sym></wpt><wpt lat="52.489937" lon="6.459934"><ele>-48.201908</ele><time>2016-02-14T10:10:13Z</time><name>003</name><sym>Residence</sym></wpt><wpt lat="52.489411" lon="6.456760"><ele>-37.078297</ele><time>2016-02-14T10:20:21Z</time><name>004</name><sym>Residence</sym></wpt><wpt lat="52.489713" lon="6.456196"><ele>-33.562054</ele><time>2016-02-14T10:22:04Z</time><name>005</name><sym>Residence</sym></wpt><wpt lat="52.489903" lon="6.455492"><ele>-32.790108</ele><time>2016-02-14T10:23:39Z</time><name>006</name><sym>Residence</sym></wpt><wpt lat="52.490728" lon="6.453517"><ele>-30.677364</ele><time>2016-02-14T10:26:11Z</time><name>007</name><sym>Residence</sym></wpt><wpt lat="52.491377" lon="6.451275"><ele>-37.321384</ele><time>2016-02-14T10:29:21Z</time><name>008</name><sym>Residence</sym></wpt><wpt lat="52.493138" lon="6.447371"><ele>-30.028191</ele><time>2016-02-14T10:34:28Z</time><name>009</name><sym>Residence</sym></wpt><wpt lat="52.493247" lon="6.447045"><ele>-23.893599</ele><time>2016-02-14T10:35:16Z</time><name>010</name><sym>Residence</sym></wpt><wpt lat="52.493910" lon="6.446087"><ele>-21.863384</ele><time>2016-02-14T10:36:57Z</time><name>011</name><sym>Residence</sym></wpt><wpt lat="52.494427" lon="6.445413"><ele>-20.054361</ele><time>2016-02-14T10:39:00Z</time><name>012</name><sym>Residence</sym></wpt><wpt lat="52.494668" lon="6.445988"><ele>-20.334759</ele><time>2016-02-14T10:40:16Z</time><name>013</name><sym>Residence</sym></wpt><wpt lat="52.495950" lon="6.446929"><ele>-20.182394</ele><time>2016-02-14T10:43:39Z</time><name>014</name><sym>Residence</sym></wpt><wpt lat="52.497517" lon="6.452095"><ele>-14.056988</ele><time>2016-02-14T10:51:00Z</time><name>015</name><sym>Residence</sym></wpt><wpt lat="52.497415" lon="6.452404"><ele>-11.613369</ele><time>2016-02-14T10:54:12Z</time><name>016</name><sym>Residence</sym></wpt><wpt lat="52.496476" lon="6.452920"><ele>-10.478783</ele><time>2016-02-14T10:56:53Z</time><name>017</name><sym>Residence</sym></wpt><wpt lat="52.494888" lon="6.453898"><ele>-10.749485</ele><time>2016-02-14T10:59:29Z</time><name>018</name><sym>Residence</sym></wpt><wpt lat="52.495720" lon="6.457989"><ele>-8.118851</ele><time>2016-02-14T11:03:47Z</time><name>019</name><sym>Residence</sym></wpt><wpt lat="52.496214" lon="6.460000"><ele>-9.171066</ele><time>2016-02-14T11:06:43Z</time><name>020</name><sym>Residence</sym></wpt><wpt lat="52.496301" lon="6.460273"><ele>-10.176498</ele><time>2016-02-14T11:07:42Z</time><name>021</name><sym>Residence</sym></wpt><wpt lat="52.496835" lon="6.462526"><ele>-5.736488</ele><time>2016-02-14T11:09:54Z</time><name>022</name><sym>Residence</sym></wpt><wpt lat="52.497426" lon="6.464595"><ele>-7.880680</ele><time>2016-02-14T11:12:18Z</time><name>023</name><sym>Residence</sym></wpt><wpt lat="52.498511" lon="6.463732"><ele>-14.021297</ele><time>2016-02-14T11:14:07Z</time><name>024</name><sym>Residence</sym></wpt><wpt lat="52.499600" lon="6.462810"><ele>-4.491631</ele><time>2016-02-14T11:16:16Z</time><name>025</name><sym>Residence</sym></wpt><wpt lat="52.500162" lon="6.464806"><ele>-1.950962</ele><time>2016-02-14T11:18:15Z</time><name>026</name><sym>Residence</sym></wpt><wpt lat="52.500656" lon="6.466907"><ele>-5.543518</ele><time>2016-02-14T11:20:15Z</time><name>027</name><sym>Residence</sym></wpt><wpt lat="52.501153" lon="6.469092"><ele>-3.317585</ele><time>2016-02-14T11:22:35Z</time><name>028</name><sym>Residence</sym></wpt><wpt lat="52.498846" lon="6.470797"><ele>-0.316750</ele><time>2016-02-14T11:27:47Z</time><name>029</name><sym>Residence</sym></wpt><wpt lat="52.499305" lon="6.472874"><ele>-1.131226</ele><time>2016-02-14T11:29:49Z</time><name>030</name><sym>Residence</sym></wpt><wpt lat="52.499495" lon="6.473027"><ele>-0.775387</ele><time>2016-02-14T11:30:58Z</time><name>031</name><sym>Residence</sym></wpt><wpt lat="52.499933" lon="6.477029"><ele>0.161858</ele><time>2016-02-14T11:34:40Z</time><name>032</name><sym>Residence</sym></wpt><wpt lat="52.498799" lon="6.478259"><ele>-2.079296</ele><time>2016-02-14T11:36:51Z</time><name>033</name><sym>Residence</sym></wpt><wpt lat="52.498422" lon="6.477614"><ele>-0.187634</ele><time>2016-02-14T11:38:10Z</time><name>034</name><sym>Residence</sym></wpt><wpt lat="52.496867" lon="6.474983"><ele>-2.008034</ele><time>2016-02-14T11:41:39Z</time><name>035</name><sym>Residence</sym></wpt><wpt lat="52.495413" lon="6.476110"><ele>-3.882622</ele><time>2016-02-14T11:45:09Z</time><name>036</name><sym>Residence</sym></wpt><wpt lat="52.493447" lon="6.472462"><ele>-0.202866</ele><time>2016-02-14T11:49:33Z</time><name>037</name><sym>Residence</sym></wpt><wpt lat="52.492467" lon="6.473983"><ele>0.281605</ele><time>2016-02-14T11:51:25Z</time><name>038</name><sym>Residence</sym></wpt><wpt lat="52.491819" lon="6.474053"><ele>0.142612</ele><time>2016-02-14T11:52:51Z</time><name>039</name><sym>Residence</sym></wpt><wpt lat="52.491546" lon="6.474010"><ele>0.119282</ele><time>2016-02-14T11:53:55Z</time><name>040</name><sym>Residence</sym></wpt><wpt lat="52.490651" lon="6.473927"><ele>-7.394650</ele><time>2016-02-14T11:55:22Z</time><name>041</name><sym>Residence</sym></wpt><wpt lat="52.491438" lon="6.470881"><ele>-10.468513</ele><time>2016-02-14T11:58:13Z</time><name>042</name><sym>Residence</sym></wpt><wpt lat="52.490863" lon="6.470127"><ele>0.639454</ele><time>2016-02-14T12:00:47Z</time><name>043</name><sym>Residence</sym></wpt><wpt lat="52.490921" lon="6.466735"><ele>0.573429</ele><time>2016-02-14T12:04:00Z</time><name>044</name><sym>Residence</sym></wpt><wpt lat="52.490538" lon="6.466068"><ele>0.124752</ele><time>2016-02-14T12:04:59Z</time><name>045</name><sym>Residence</sym></wpt><wpt lat="52.489434" lon="6.463747"><ele>-14.656513</ele><time>2016-02-14T12:08:22Z</time><name>046</name><sym>Residence</sym></wpt><wpt lat="52.488674" lon="6.461928"><ele>-1.059273</ele><time>2016-02-14T12:10:38Z</time><name>047</name><sym>Residence</sym></wpt></gpx>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="MapSource 6.15.4" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2016-02-24T19:18:41Z</time>
+    <bounds maxlat="52.5011530" maxlon="6.4782590" minlat="52.4882930" minlon="6.4454130"/>
+  </metadata>
+
+  <wpt lat="52.4882930" lon="6.4615200">
+    <ele>217.0586240</ele>
+    <time>2016-02-14T10:07:40Z</time>
+    <name>001</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4895980" lon="6.4606520">
+    <ele>-26.4044490</ele>
+    <time>2016-02-14T10:09:28Z</time>
+    <name>002</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4899370" lon="6.4599340">
+    <ele>-48.2019080</ele>
+    <time>2016-02-14T10:10:13Z</time>
+    <name>003</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4894110" lon="6.4567600">
+    <ele>-37.0782970</ele>
+    <time>2016-02-14T10:20:21Z</time>
+    <name>004</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4897130" lon="6.4561960">
+    <ele>-33.5620540</ele>
+    <time>2016-02-14T10:22:04Z</time>
+    <name>005</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4899030" lon="6.4554920">
+    <ele>-32.7901080</ele>
+    <time>2016-02-14T10:23:39Z</time>
+    <name>006</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4907280" lon="6.4535170">
+    <ele>-30.6773640</ele>
+    <time>2016-02-14T10:26:11Z</time>
+    <name>007</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4913770" lon="6.4512750">
+    <ele>-37.3213840</ele>
+    <time>2016-02-14T10:29:21Z</time>
+    <name>008</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4931380" lon="6.4473710">
+    <ele>-30.0281910</ele>
+    <time>2016-02-14T10:34:28Z</time>
+    <name>009</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4932470" lon="6.4470450">
+    <ele>-23.8935990</ele>
+    <time>2016-02-14T10:35:16Z</time>
+    <name>010</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4939100" lon="6.4460870">
+    <ele>-21.8633840</ele>
+    <time>2016-02-14T10:36:57Z</time>
+    <name>011</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4944270" lon="6.4454130">
+    <ele>-20.0543610</ele>
+    <time>2016-02-14T10:39:00Z</time>
+    <name>012</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4946680" lon="6.4459880">
+    <ele>-20.3347590</ele>
+    <time>2016-02-14T10:40:16Z</time>
+    <name>013</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4959500" lon="6.4469290">
+    <ele>-20.1823940</ele>
+    <time>2016-02-14T10:43:39Z</time>
+    <name>014</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4975170" lon="6.4520950">
+    <ele>-14.0569880</ele>
+    <time>2016-02-14T10:51:00Z</time>
+    <name>015</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4974150" lon="6.4524040">
+    <ele>-11.6133690</ele>
+    <time>2016-02-14T10:54:12Z</time>
+    <name>016</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4964760" lon="6.4529200">
+    <ele>-10.4787830</ele>
+    <time>2016-02-14T10:56:53Z</time>
+    <name>017</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4948880" lon="6.4538980">
+    <ele>-10.7494850</ele>
+    <time>2016-02-14T10:59:29Z</time>
+    <name>018</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4937666" lon="6.4531572">
+    <time>2016-02-21T14:32:18Z</time>
+    <name>019</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4936588" lon="6.4551311">
+    <time>2016-02-21T14:32:28Z</time>
+    <name>020A</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4936628" lon="6.4559054">
+    <ele>16.8789063</ele>
+    <time>2016-02-21T14:32:31Z</time>
+    <name>020B</name>
+    <cmt>Onverharde Weg</cmt>
+    <desc>Onverharde Weg</desc>
+    <sym>Flag, Blue</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4939203" lon="6.4579225">
+    <ele>16.4648438</ele>
+    <time>2016-02-21T14:33:43Z</time>
+    <name>020C</name>
+    <cmt>Weg en Onverharde Weg</cmt>
+    <desc>Weg en Onverharde Weg</desc>
+    <sym>Flag, Blue</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4942793" lon="6.4600438">
+    <ele>18.1601563</ele>
+    <time>2016-02-21T14:34:47Z</time>
+    <name>020D</name>
+    <cmt>Half Verharde Voetweg</cmt>
+    <desc>Half Verharde Voetweg</desc>
+    <sym>Flag, Blue</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4943924" lon="6.4607120">
+    <ele>16.6093750</ele>
+    <time>2016-02-21T14:35:06Z</time>
+    <name>020E</name>
+    <cmt>Lokale Weg en Onverharde Weg</cmt>
+    <desc>Lokale Weg en Onverharde Weg</desc>
+    <sym>Flag, Blue</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4963010" lon="6.4602730">
+    <ele>-10.1764980</ele>
+    <time>2016-02-14T11:07:42Z</time>
+    <name>021</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4968350" lon="6.4625260">
+    <ele>-5.7364880</ele>
+    <time>2016-02-14T11:09:54Z</time>
+    <name>022</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4974260" lon="6.4645950">
+    <ele>-7.8806800</ele>
+    <time>2016-02-14T11:12:18Z</time>
+    <name>023</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4985110" lon="6.4637320">
+    <ele>-14.0212970</ele>
+    <time>2016-02-14T11:14:07Z</time>
+    <name>024</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4996000" lon="6.4628100">
+    <ele>-4.4916310</ele>
+    <time>2016-02-14T11:16:16Z</time>
+    <name>025</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.5001620" lon="6.4648060">
+    <ele>-1.9509620</ele>
+    <time>2016-02-14T11:18:15Z</time>
+    <name>026</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.5006560" lon="6.4669070">
+    <ele>-5.5435180</ele>
+    <time>2016-02-14T11:20:15Z</time>
+    <name>027</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.5011530" lon="6.4690920">
+    <ele>-3.3175850</ele>
+    <time>2016-02-14T11:22:35Z</time>
+    <name>028</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4988460" lon="6.4707970">
+    <ele>-0.3167500</ele>
+    <time>2016-02-14T11:27:47Z</time>
+    <name>029</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4993050" lon="6.4728740">
+    <ele>-1.1312260</ele>
+    <time>2016-02-14T11:29:49Z</time>
+    <name>030</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4994950" lon="6.4730270">
+    <ele>-0.7753870</ele>
+    <time>2016-02-14T11:30:58Z</time>
+    <name>031</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4999330" lon="6.4770290">
+    <ele>0.1618580</ele>
+    <time>2016-02-14T11:34:40Z</time>
+    <name>032</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4987990" lon="6.4782590">
+    <ele>-2.0792960</ele>
+    <time>2016-02-14T11:36:51Z</time>
+    <name>033</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4984220" lon="6.4776140">
+    <ele>-0.1876340</ele>
+    <time>2016-02-14T11:38:10Z</time>
+    <name>034</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4968670" lon="6.4749830">
+    <ele>-2.0080340</ele>
+    <time>2016-02-14T11:41:39Z</time>
+    <name>035</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4954130" lon="6.4761100">
+    <ele>-3.8826220</ele>
+    <time>2016-02-14T11:45:09Z</time>
+    <name>036</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4934470" lon="6.4724620">
+    <ele>-0.2028660</ele>
+    <time>2016-02-14T11:49:33Z</time>
+    <name>037</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4924670" lon="6.4739830">
+    <ele>0.2816050</ele>
+    <time>2016-02-14T11:51:25Z</time>
+    <name>038</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4918190" lon="6.4740530">
+    <ele>0.1426120</ele>
+    <time>2016-02-14T11:52:51Z</time>
+    <name>039</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4915460" lon="6.4740100">
+    <ele>0.1192820</ele>
+    <time>2016-02-14T11:53:55Z</time>
+    <name>040</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4906510" lon="6.4739270">
+    <ele>-7.3946500</ele>
+    <time>2016-02-14T11:55:22Z</time>
+    <name>041</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4914380" lon="6.4708810">
+    <ele>-10.4685130</ele>
+    <time>2016-02-14T11:58:13Z</time>
+    <name>042</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4908630" lon="6.4701270">
+    <ele>0.6394540</ele>
+    <time>2016-02-14T12:00:47Z</time>
+    <name>043</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4909210" lon="6.4667350">
+    <ele>0.5734290</ele>
+    <time>2016-02-14T12:04:00Z</time>
+    <name>044</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4905380" lon="6.4660680">
+    <ele>0.1247520</ele>
+    <time>2016-02-14T12:04:59Z</time>
+    <name>045</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4894340" lon="6.4637470">
+    <ele>-14.6565130</ele>
+    <time>2016-02-14T12:08:22Z</time>
+    <name>046</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="52.4886740" lon="6.4619280">
+    <ele>-1.0592730</ele>
+    <time>2016-02-14T12:10:38Z</time>
+    <name>047</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+</gpx>
