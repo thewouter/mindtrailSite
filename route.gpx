@@ -4,105 +4,6 @@
         <name><![CDATA[Converted from a KML file using KML2GPX.COM]]></name>
         <desc><![CDATA[Converted from a KML file KML2GPX.COM]]></desc>
                 </metadata>
-
-                                                                                
-                <wpt lat="52.504070" lon="6.479580">
-                                                            <ele>61</ele>
-                    <name><![CDATA[18]]></name>
-                    <cmt><![CDATA[2017-01-15 14:39:12 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:39:12 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.504540" lon="6.478770">
-                                                            <ele>55</ele>
-                    <name><![CDATA[17]]></name>
-                    <cmt><![CDATA[2017-01-15 14:37:59 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:37:59 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.504780" lon="6.478090">
-                                                            <ele>55</ele>
-                    <name><![CDATA[16]]></name>
-                    <cmt><![CDATA[2017-01-15 14:37:02 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:37:02 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.505230" lon="6.476840">
-                                                            <ele>49</ele>
-                    <name><![CDATA[15]]></name>
-                    <cmt><![CDATA[2017-01-15 14:35:24 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:35:24 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.505730" lon="6.475140">
-                                                            <ele>50</ele>
-                    <name><![CDATA[14]]></name>
-                    <cmt><![CDATA[2017-01-15 14:33:55 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:33:55 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.506170" lon="6.474060">
-                                                            <ele>53</ele>
-                    <name><![CDATA[13]]></name>
-                    <cmt><![CDATA[2017-01-15 14:32:40 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:32:40 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.506770" lon="6.473120">
-                                                            <ele>50</ele>
-                    <name><![CDATA[12]]></name>
-                    <cmt><![CDATA[2017-01-15 14:31:34 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:31:34 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.506530" lon="6.471300">
-                                                            <ele>53</ele>
-                    <name><![CDATA[11]]></name>
-                    <cmt><![CDATA[2017-01-15 14:29:55 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:29:55 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.506900" lon="6.470790">
-                                                            <ele>55</ele>
-                    <name><![CDATA[10]]></name>
-                    <cmt><![CDATA[2017-01-15 14:29:00 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:29:00 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.508410" lon="6.469160">
-                                                            <ele>58</ele>
-                    <name><![CDATA[09]]></name>
-                    <cmt><![CDATA[2017-01-15 14:26:51 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:26:51 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.508400" lon="6.467800">
-                                                            <ele>63</ele>
-                    <name><![CDATA[08]]></name>
-                    <cmt><![CDATA[2017-01-15 14:25:18 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:25:18 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.508290" lon="6.466760">
-                                                            <ele>59</ele>
-                    <name><![CDATA[07]]></name>
-                    <cmt><![CDATA[2017-01-15 14:24:15 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:24:15 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.508360" lon="6.466190">
-                                                            <ele>61</ele>
-                    <name><![CDATA[06]]></name>
-                    <cmt><![CDATA[2017-01-15 14:23:18 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:23:18 GMT+01:00]]></desc>
-                </wpt>
-                                                                                                                            
-                <wpt lat="52.508900" lon="6.465470">
-                                                            <ele>56</ele>
-                    <name><![CDATA[05]]></name>
-                    <cmt><![CDATA[2017-01-15 14:21:24 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 14:21:24 GMT+01:00]]></desc>
-                </wpt>
                                                                                                                             
                 <wpt lat="52.507130" lon="6.462060">
                                                             <ele>51</ele>
@@ -130,15 +31,107 @@
                     <name><![CDATA[04]]></name>
                     <cmt><![CDATA[2017-01-15 14:18:11 GMT+01:00]]></cmt>
                     <desc><![CDATA[2017-01-15 14:18:11 GMT+01:00]]></desc>
+                </wpt> 
+                                                                                                                            
+                <wpt lat="52.508900" lon="6.465470">
+                                                            <ele>56</ele>
+                    <name><![CDATA[05]]></name>
+                    <cmt><![CDATA[2017-01-15 14:21:24 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:21:24 GMT+01:00]]></desc>
                 </wpt>
                                                                                                                             
-                <wpt lat="52.576260" lon="6.474680">
-                                                            <ele>48</ele>
-                    <name><![CDATA[een]]></name>
-                    <cmt><![CDATA[2017-01-15 10:54:28 GMT+01:00]]></cmt>
-                    <desc><![CDATA[2017-01-15 10:54:28 GMT+01:00]]></desc>
+                <wpt lat="52.508360" lon="6.466190">
+                                                            <ele>61</ele>
+                    <name><![CDATA[06]]></name>
+                    <cmt><![CDATA[2017-01-15 14:23:18 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:23:18 GMT+01:00]]></desc>
                 </wpt>
                                                                                                                             
+                <wpt lat="52.508290" lon="6.466760">
+                                                            <ele>59</ele>
+                    <name><![CDATA[07]]></name>
+                    <cmt><![CDATA[2017-01-15 14:24:15 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:24:15 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.508400" lon="6.467800">
+                                                            <ele>63</ele>
+                    <name><![CDATA[08]]></name>
+                    <cmt><![CDATA[2017-01-15 14:25:18 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:25:18 GMT+01:00]]></desc>
+                </wpt>
+
+                                                                                                                            
+                <wpt lat="52.508410" lon="6.469160">
+                                                            <ele>58</ele>
+                    <name><![CDATA[09]]></name>
+                    <cmt><![CDATA[2017-01-15 14:26:51 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:26:51 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.506900" lon="6.470790">
+                                                            <ele>55</ele>
+                    <name><![CDATA[10]]></name>
+                    <cmt><![CDATA[2017-01-15 14:29:00 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:29:00 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.506530" lon="6.471300">
+                                                            <ele>53</ele>
+                    <name><![CDATA[11]]></name>
+                    <cmt><![CDATA[2017-01-15 14:29:55 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:29:55 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.506770" lon="6.473120">
+                                                            <ele>50</ele>
+                    <name><![CDATA[12]]></name>
+                    <cmt><![CDATA[2017-01-15 14:31:34 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:31:34 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.506170" lon="6.474060">
+                                                            <ele>53</ele>
+                    <name><![CDATA[13]]></name>
+                    <cmt><![CDATA[2017-01-15 14:32:40 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:32:40 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.505730" lon="6.475140">
+                                                            <ele>50</ele>
+                    <name><![CDATA[14]]></name>
+                    <cmt><![CDATA[2017-01-15 14:33:55 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:33:55 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.505230" lon="6.476840">
+                                                            <ele>49</ele>
+                    <name><![CDATA[15]]></name>
+                    <cmt><![CDATA[2017-01-15 14:35:24 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:35:24 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.504780" lon="6.478090">
+                                                            <ele>55</ele>
+                    <name><![CDATA[16]]></name>
+                    <cmt><![CDATA[2017-01-15 14:37:02 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:37:02 GMT+01:00]]></desc>
+                </wpt>
+                                                                                                                            
+                <wpt lat="52.504540" lon="6.478770">
+                                                            <ele>55</ele>
+                    <name><![CDATA[17]]></name>
+                    <cmt><![CDATA[2017-01-15 14:37:59 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:37:59 GMT+01:00]]></desc>
+                </wpt>
+
+                                                                                
+                <wpt lat="52.504070" lon="6.479580">
+                                                            <ele>61</ele>
+                    <name><![CDATA[18]]></name>
+                    <cmt><![CDATA[2017-01-15 14:39:12 GMT+01:00]]></cmt>
+                    <desc><![CDATA[2017-01-15 14:39:12 GMT+01:00]]></desc>
+                </wpt>                                                                                                    
                 <wpt lat="52.503820" lon="6.481950">
                                                             <ele>51</ele>
                     <name><![CDATA[19]]></name>
