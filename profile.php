@@ -164,7 +164,7 @@
 		function getContent(groupName, time){
 			 var content = 
 		   			"<div> "+
-					groupName<?php if($user_check == "tochtstaf"){?> + "<br>Laatst update: " + Math.floor(time / 60) + "m " + time%60 + "s geleden.<br>"  +
+					groupName<?php if($username == "tochtstaf"){?> + "<br>Laatst update: " + Math.floor(time / 60) + "m " + time%60 + "s geleden.<br>"  +
 					"<input width=\"25\" id=\"message\" required=\"required\"><\/input>"+
 					"<button onclick=\"sendMessage('" + groupName + "')\" > send <\/button><br>"+
          			"<button onclick=\"removeGroup('" + groupName + "')\" > remove <\/button>"<?php }?>+

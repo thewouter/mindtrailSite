@@ -9,17 +9,18 @@ if (isset($_POST['submit'])) {
 		$username=$_POST['username'];
 		$password=$_POST['password'];
 		// Establishing Connection with Server by passing server_name, user_id and password as a parameter
-		$connection = mysql_connect("localhost", "mindtrail", "mindtrailpw");
+		// $connection = mysql_connect("localhost", "mindtrail", "mindtrailpw");
 		// To protect MySQL injection for Security purpose
+		
 		$username = stripslashes($username);
 		$password = stripslashes($password);
-		$username = mysql_real_escape_string($username);
-		$password = mysql_real_escape_string($password);
+		// $username = mysql_real_escape_string($username);
+		// $password = mysql_real_escape_string($password);
 		// Selecting Database
-		$db = mysql_select_db("mindtrail", $connection);
+		$db = new PDO('mysql:host=localhost;dbname=mindtrail;charset=utf8mb4', 'mindtrail', 'mindtrailpw');
 		// SQL query to fetch information of registerd users and finds user match.
-		$query = mysql_query("select * from login where password='$password' AND username='$username'", $connection);
-		$rows = mysql_num_rows($query);
+		$qu = $db->query("select * from login where password='$password' AND username='$username'")->fetchAll(PDO::FETCH_ASSOC);
+		$rows = count($qu);
 		if ($rows == 1) {
 			$_SESSION['login_user']=$username; // Initializing Session
 			header("location: profile.php"); // Redirecting To Other Page
